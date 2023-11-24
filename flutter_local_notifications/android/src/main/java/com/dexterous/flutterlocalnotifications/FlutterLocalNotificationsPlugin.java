@@ -391,6 +391,7 @@ public class FlutterLocalNotificationsPlugin
       }
     }
 
+    Log.d("fullscreen", notificationDetails.fullScreenIntent.toString() + "");
     if (BooleanUtils.getValue(notificationDetails.fullScreenIntent)) {
       builder.setFullScreenIntent(pendingIntent, true);
     }
